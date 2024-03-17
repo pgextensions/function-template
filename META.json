@@ -1,0 +1,50 @@
+{
+  "name": "soundex-function",
+  "abstract": "soundex - function for comparing strings",
+  "description": "soundex - function for comparing strings",
+  "version": "1.0.0",
+  "maintainer": [
+    "Jerry Sievert <code@legitimatesounding.com>"
+  ],
+  "license": {
+    "PostgreSQL": "https://www.postgresql.org/about/licence"
+  },
+  "prereqs": {
+    "runtime": {
+      "requires": {
+        "PostgreSQL": "15.3.0"
+      },
+      "recommends": {
+        "PostgreSQL": "15.3.0"
+      }
+    }
+  },
+  "provides": {
+    "soundex-function": {
+      "file": "soundex-function--1.0.0.sql",
+      "docfile": "README.md",
+      "version": "1.0.0",
+      "abstract": "soundex - function for comparing strings"
+    }
+  },
+  "resources": {
+    "bugtracker": {
+      "web": "https://github.com/pgextensions/function-template/issues"
+    },
+    "repository": {
+      "url": "https://github.com/pgextensions/function-template.git",
+      "web": "https://github.com/pgextensions/function-template",
+      "type": "git"
+    }
+  },
+  "generated_by": "Jerry Sievert",
+  "meta-spec": {
+    "version": "1.0.0",
+    "url": "https://pgxn.org/meta/spec.txt"
+  },
+  "tags": [
+    "soundex",
+    "template",
+    "example"
+  ]
+}

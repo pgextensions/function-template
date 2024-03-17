@@ -1,0 +1,29 @@
+CREATE EXTENSION "soundex-function";
+-- john and joan should be similar
+SELECT soundex('john');
+ soundex 
+---------
+ J500
+(1 row)
+
+SELECT soundex('joan');
+ soundex 
+---------
+ J500
+(1 row)
+
+-- principally is a longer word
+SELECT soundex('principally');
+ soundex 
+---------
+ P652
+(1 row)
+
+-- there, their, and they're should match
+SELECT soundex('there') = soundex('their')
+  AND soundex('they''re') = soundex('there');
+ ?column? 
+----------
+ t
+(1 row)
+

@@ -1,0 +1,5 @@
+# soundex function extension
+comment = 'soundex - function for comparing strings'
+default_version = '1.0.0'
+module_pathname = '$libdir/soundex-function'
+relocatable = true
